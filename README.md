@@ -30,7 +30,7 @@ This project consists of two apps (one in Flutter and one in Kotlin) that commun
 - ✅ Proper use of **MethodChannels** in Flutter
 - ✅ Robust **error handling** & **UI/UX considerations**
 
-![Screenshot](https://github.com/4ayyappadasks/Resoluteflutterapp/raw/main/Screenshot_20250321_135908.png)
+![Screenshot](https://github.com/4ayyappadasks/Resoluteflutterapp/blob/5b2bcfbc0081bb580431c8fa83c397575e82fb08/Screenshot_20250321_135908.png)
 
 ## How to Run
 1. **Install and run the Kotlin app first** to populate the database.
