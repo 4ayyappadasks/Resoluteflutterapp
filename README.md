@@ -1,16 +1,38 @@
-# myflutterapp
+# Flutter & Kotlin Inter-App Communication via ContentProvider
 
-A new Flutter project.
+## Overview
+This project consists of two apps (one in Flutter and one in Kotlin) that communicate securely using a ContentProvider. The Kotlin app manages user data, and the Flutter app retrieves and displays this data.
 
-## Getting Started
+## App 1: Native Android (Kotlin)
+### Features:
+- Stores and manages user data (Name, Email) in an SQLite database.
+- Exposes data securely using a ContentProvider.
+- Restricts access to a specific package (Flutter app) with **READ_PERMISSION** and **WRITE_PERMISSION**.
+- Provides a UI to add new users and display them in a RecyclerView.
 
-This project is a starting point for a Flutter application.
+**Kotlin App Repository:** [Link to Kotlin App](#)
 
-A few resources to get you started if this is your first Flutter project:
+## App 2: Flutter
+### Features:
+- Retrieves the user list from the Kotlin app's ContentProvider.
+- Displays users in a ListView UI.
+- Handles permission issues and gracefully shows an error if access is denied.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Technical Details
+- Uses **MethodChannels** to communicate with native Android code.
+- Fetches data securely from the Kotlin app's **ContentProvider**.
+- Implements error handling for cases like **provider not found** or **permission denied**.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Evaluation Criteria
+- ✅ Correct implementation of **ContentProvider**
+- ✅ Secure **inter-app communication** (permission-based access)
+- ✅ Efficient **SQLite operations** in Kotlin
+- ✅ Proper use of **MethodChannels** in Flutter
+- ✅ Robust **error handling** & **UI/UX considerations**
+
+## How to Run
+1. **Install and run the Kotlin app first** to populate the database.
+2. **Install and run the Flutter app** to retrieve and display the stored user data.
+3. **Ensure both apps have the necessary permissions** for smooth communication.
+
+For the Kotlin app source code, visit: [https://github.com/4ayyappadasks/Resolutekotlinapp](#)
