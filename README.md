@@ -10,7 +10,7 @@ This project consists of two apps (one in Flutter and one in Kotlin) that commun
 - Restricts access to a specific package (Flutter app) with **READ_PERMISSION** and **WRITE_PERMISSION**.
 - Provides a UI to add new users and display them in a RecyclerView.
 
-**Kotlin App Repository:** [Link to Kotlin App](#)
+**Kotlin App Repository:** [https://github.com/4ayyappadasks/Resolutekotlinapp]
 
 ## App 2: Flutter
 ### Features:
@@ -30,9 +30,11 @@ This project consists of two apps (one in Flutter and one in Kotlin) that commun
 - ✅ Proper use of **MethodChannels** in Flutter
 - ✅ Robust **error handling** & **UI/UX considerations**
 
+https://github.com/4ayyappadasks/Resoluteflutterapp/blob/5b2bcfbc0081bb580431c8fa83c397575e82fb08/Screenshot_20250321_135908.png
+
 ## How to Run
 1. **Install and run the Kotlin app first** to populate the database.
 2. **Install and run the Flutter app** to retrieve and display the stored user data.
 3. **Ensure both apps have the necessary permissions** for smooth communication.
 
-For the Kotlin app source code, visit: [https://github.com/4ayyappadasks/Resolutekotlinapp](#)
+For the Kotlin app source code, visit: [https://github.com/4ayyappadasks/Resolutekotlinapp]
